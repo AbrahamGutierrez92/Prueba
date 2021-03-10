@@ -1,13 +1,14 @@
 
 import './App.css';
 import NavBar from './Nav';
+import AjaxApis from './components/AjaxApis';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
 
-      <h1>Esto es Una prueba de deploy</h1>
+      <AjaxApis/>
       
     </div>
   );
