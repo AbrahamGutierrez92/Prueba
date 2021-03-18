@@ -2,17 +2,20 @@ import React from 'react';
 import './Nav.css';
 
 function NavBar(){
-     const burger = document.getElementById('burger');
-     const ul = document.querySelector('nav ul');
 
-     burger.addEventListener('click',() => {
-        ul.classList.toggle('show');
-     });
+    function btn(){
+        const burger = document.getElementById('burger');
+        const ul = document.querySelector('nav ul');
+
+        burger.addEventListener('click',() => {
+           ul.classList.toggle('show');
+        });
+    }
     return(
     <nav>
         <p>AbrahamLogo</p>
         
-        <button id="burger" className="burger">
+        <button onClick={btn} id="burger" className="burger">
           <i className="fas fa-bars"></i>
         </button>
  
