@@ -2,6 +2,12 @@ import React from 'react';
 import './Nav.css';
 
 function NavBar(){
+     const burger = document.getElementById('burger');
+     const ul = document.querySelector('nav ul');
+
+     burger.addEventListener('click',() => {
+        ul.classList.toggle('show');
+     });
     return(
     <nav>
         <p>AbrahamLogo</p>
